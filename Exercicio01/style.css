@@ -1,0 +1,29 @@
+
+body{
+	background-color:pink;
+}
+h2{
+  text-align: center;
+  padding-top: 50px;
+  color:black;
+}
+
+form{
+	text-align: center;
+	font-family: arial;
+	font-size: 18px;
+	color:black;
+}
+
+p{
+	font-family: arial;
+	font-size:19px;
+	padding-left: 12px;
+    color:black;
+}
+
+h3{
+	color: gray;
+}
+
+

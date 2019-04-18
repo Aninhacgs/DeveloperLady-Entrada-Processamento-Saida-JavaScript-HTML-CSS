@@ -1,0 +1,63 @@
+<!--Considere que o número de uma placa de veículo é composto por quatro algarismos. Construa um algoritmo em JavaScript que leia este número e apresente o algarismo
+correspondente à casa das unidades-->
+
+<!DOCTYPE html>
+<html>
+<head>
+<title>Placa Veículo</title>
+<meta charset="utf-8">
+<link rel="stylesheet" type="text/css" href="style.css">
+<body>
+    <h3>Exercício 01 - Entrada Processamento e Saída</h3><hr>
+	<p>Considere que o número de uma placa de veículo é composto por quatro algarismos.
+	Construa um codigo em HTML/JavaScript que leia este número e apresente o algarismo correspondente à casa das unidades, das dezenas, 
+	das centenas e de milhar.<br><br>Resolução:</p>
+	<h2>Valores numéricos da placa do veículo</h2>
+	<form name="FormularioPlaca" action="" metho="post">
+
+		Primeiro Número da Placa........: <input type="text" name="f_milhar" /><p></p>
+		Segundo Número da Placa........: <input type="text" name="f_centena" /><p></p>
+		Terceiro Número da Placa........: <input type="text" name="f_dezena" /><p></p>
+		Quarto Número da Placa..........: <input type="text" name="f_unidade" /><p></p>
+		<input type ="button" name="btn_algorismos" value="Algarismos" onclick="Algarismos()" />
+		<input type="button" name="btn_placa" value="Consultar Placa" onclick="Consultar()" />
+		<input type ="reset" name="btn_limpar" value="Limpar" />
+
+	</form>
+
+	<script type="text/javascript">
+	  var js_unidades;
+	  var js_dezena;
+	  var js_centena;
+	  var js_milhar;
+
+	  function Algarismos(){
+
+	  	js_milhar = parseInt(document.FormularioPlaca.f_milhar.value);
+
+	  	js_centena = parseInt(document.FormularioPlaca.f_centena.value);
+
+	  	js_dezena = parseInt(document.FormularioPlaca.f_dezena.value);
+
+	  	js_unidades = parseInt(document.FormularioPlaca.f_unidade.value);
+
+	  	window.alert("Casas dos algarismos da placa do veículo: \n Casa da milhar = " + js_milhar.toString() + "\n Casa da centena = " + js_centena.toString() + "\n Casa da dezena = " + js_dezena.toString() + "\n Casa das unidades = " + js_unidades.toString());
+
+	  }
+
+	  function Consultar(){
+	  	js_milhar = parseInt(document.FormularioPlaca.f_milhar.value);
+
+	  	js_centena = parseInt(document.FormularioPlaca.f_centena.value);
+
+	  	js_dezena = parseInt(document.FormularioPlaca.f_dezena.value);
+
+	  	js_unidades = parseInt(document.FormularioPlaca.f_unidade.value);
+
+	  	window.alert("Valores numéricos da placa do veículo = " + js_milhar.toString() + js_centena.toString() + js_dezena.toString() + js_unidades.toString());
+	  }
+	  
+	</script>
+</body>
+</head>
+</html>
