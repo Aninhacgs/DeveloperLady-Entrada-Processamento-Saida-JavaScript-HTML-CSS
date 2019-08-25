@@ -1,0 +1,33 @@
+<!--Escreva um algoritmo em JavaScript que leia um número real e imprima a terça
+parte deste número.-->
+
+<!DOCTYPE html>
+<html>
+<head>
+<title>Terça Parte</title>
+<meta charset="utf-8" />
+<link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+	<h3>A terça parte de um número do tipo real</h3>
+	<form name="FormularioCalc" action="" method="post">
+		Digite um valor..........: <input type="text" name="f_n1" /><p></p>
+		<input type="button" name="btn_calcular" value="Calcular a Terça Parte" onclick="TercaParte()" />
+		<input type="reset" name="btn_limpar" value="Limpar" />
+	</form>
+
+	<script type="text/javascript">
+	  var js_valor;
+	  var js_calc;
+
+	  function TercaParte(){
+
+	  	js_valor = parseFloat(document.FormularioCalc.f_n1.value);
+
+	  	js_calc = js_valor / 3;
+
+	  	window.alert("A terça parte do valor " + js_valor.toString() + " = " + js_calc.toString());
+	  }
+	</script>
+</body>
+</html>
