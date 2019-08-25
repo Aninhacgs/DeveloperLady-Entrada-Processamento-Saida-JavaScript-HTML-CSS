@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Consulta Mês</title>
+	<meta charset="utf-8">
+	<link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+	<h2>Consultar mês</h2>
+	<form name="FormularioMes" action="" method="post">
+		Digite um valor de 1 ate 12 referente ao mês......:<input type="text" name="f_mes" /><p></p>
+		<input type="button" name="btn_mes" value="Consultar Mês" onclick="ConsultarMes()" />
+		<input type="reset" name="btn_limpar" value="Limpar" />
+	</form>
+
+	<script type="text/javascript">
+	  var js_mes;
+
+	  function ConsultarMes(){
+	  	js_mes = parseInt(document.FormularioMes.f_mes.value);
+
+	  	switch(js_mes){
+	  		case 1:
+	  		   window.alert("Janeiro");
+	  		   break;
+
+	  		case 2:
+	  		   window.alert("Fevereiro");
+	  		   break;
+
+	  		case 3:
+	  		   window.alert("Março");
+	  		   break;
+
+	  		case 4:
+	  		   window.alert("Abril");
+	  		   break;
+
+	  		case 5:
+	  		   window.alert("Maio");
+	  		   break;
+
+	  		case 6:
+	  		   window.alert("Junho");
+	  		   break;
+
+	  		case 7:
+	  		   window.alert("Julho");
+	  		   break;
+
+	  		case 8:
+	  		   window.alert("Agosto");
+	  		   break;   
+
+	  		case 9:
+	  		   window.alert("Setembro");
+	  		   break;
+
+	  		case 10:
+	  		   window.alert("Outubro");
+	  		   break;
+
+	  		case 11:
+	  		   window.alert("Novembro");
+	  		   break;
+
+	  		case 12:
+	  		   window.alert("Dezembro");
+	  		   break;
+
+
+	  	}
+
+	  }
+	</script>
+</html>
