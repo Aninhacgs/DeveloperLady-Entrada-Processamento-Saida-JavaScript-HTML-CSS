@@ -1,0 +1,38 @@
+<!--Escreva um algoritmo em JavaScript que leia dois números reais e imprima a média
+aritmética entre esses dois valores com a seguinte mensagem “MEDIA” antes do
+resultado.-->
+
+<!DOCTYPE html>
+<html>
+<head>
+<title>Media</title>
+<meta charset="utf-8" />
+<link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+<h3>Média de dois numeros reais</h3>
+<form name="FormularioMedia" action="" mathod="post" >
+	Digite o primeiro valor..........: <input type="text" name="f_n1" /><p></p>
+	Digite o segundo valor...........: <input type="text" name="f_n2" /><p></p>
+	<input type="button" name="btn_media" value="Calcular Média" onclick="calMedia()" />
+	<input type="reset" name="btn_limpar" value="Limpar" />
+</form>
+
+<script type="text/javascript">
+  var js_valor1;
+  var js_valor2;
+  var js_media;
+
+  function calMedia(){
+
+  	js_valor1 = parseFloat(document.FormularioMedia.f_n1.value);
+  	js_valor2 = parseFloat(document.FormularioMedia.f_n2.value);
+
+  	js_media = (js_valor1 + js_valor2) / 2;
+
+  	window.alert("A média dos valores " + js_valor1.toString() + " e " + js_valor2.toString() + " = " + js_media.toString());
+  }
+
+</script>
+</body>
+</html>
