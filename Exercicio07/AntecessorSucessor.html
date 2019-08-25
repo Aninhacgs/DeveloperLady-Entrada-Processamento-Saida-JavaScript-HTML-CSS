@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Sucessor e Antecesor</title>
+    <meta charset = "utf-8"/>
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+	<h3>Valor Antecessor e Sucessor</h3>
+	<form name="Formulario" action="" method="post">
+		Digite o valor..........: <input type="text" name="f_n1" /><p></p>
+		<input type="button" name="btn_antecessor" value="Antecessor" onclick="antecessor()" />
+		<input type="button" name="btn_sucessor" value="Sucessor" onclick="sucessor()" />
+		<input type="reset" name="btn_limpar" value="Limpar" />
+    </fomr>
+
+    <script type="text/javascript">
+       var js_n1;
+       var js_antecessor;
+       var js_sucessor;
+
+       
+       function antecessor(){
+
+       	js_n1 = parseInt(document.Formulario.f_n1.value);
+
+       	if(js_n1 < 0){
+       		js_antecessor = js_n1 + 1;
+       	}
+
+       	else
+       		js_antecessor = js_n1 - 1;
+
+
+       	window.alert("O antecessor do valor " + js_n1.toString() + " = " + js_antecessor.toString());
+
+       }
+
+
+       function sucessor(){
+
+       	js_n1 = parseInt(document.Formulario.f_n1.value);
+
+       	if(js_n1 < 0){
+
+       		js_sucessor = js_n1 - 1;
+       	}
+
+       	else
+       		js_sucessor = js_n1 + 1;
+
+
+       	window.alert("O sucessor do valor " + js_n1.toString() + " = " + js_sucessor.toString());
+
+       }
+
+    </script>
+</body>
+</html>
